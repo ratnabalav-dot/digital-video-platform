@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home - StreamFlix</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+  <nav class="navbar">
+    <h2 class="logo">STREAMFLIX</h2>
+    <div class="nav-links">
+      <a href="dashboard.html" class="active">Home</a>
+      <a href="browse.html">Browse</a>
+      <a href="#">My List</a>
+      <button onclick="logout()" class="btn-red">Logout</button>
+    </div>
+  </nav>
+  <div class="banner">
+    <div class="banner-content">
+      <h1>Money Heist</h1>
+      <p>A criminal mastermind who goes by "The Professor" has a plan to pull off the biggest heist in recorded history.</p>
+      <button onclick="playVideo('Money Heist')" class="btn-play">▶ Play</button>
+      <button class="btn-info">ⓘ More Info</button>
+    </div>
+  </div>
+  <div class="container">
+    <h2>Trending Now</h2>
+    <div class="video-row" id="trendingVideos"></div>
+    
+    <h2>Top Picks For You</h2>
+    <div class="video-row" id="topPicks"></div>
+    
+    <h2>Action Movies</h2>
+    <div class="video-row" id="actionVideos"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
